@@ -23,7 +23,7 @@ class AppDelegate: NSObject, NSApplicationDelegate
     {
        // onZoom_FIT(self)
         
-        // QUIESTION: Is this code actually needed ???
+        // QUESTION: Is this code actually needed ???
         
         if let docView = scrollView.documentView
         {
