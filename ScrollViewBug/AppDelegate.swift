@@ -25,6 +25,8 @@ class AppDelegate: NSObject, NSApplicationDelegate
         
         // QUESTION: Is this code actually needed ???
         
+        scrollView.documentView = imageView
+        
         if let docView = scrollView.documentView
         {
             let img = docView as! NSImageView

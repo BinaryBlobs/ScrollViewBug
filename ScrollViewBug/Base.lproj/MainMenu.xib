@@ -16,7 +16,6 @@
             <connections>
                 <outlet property="clipView" destination="8ZK-y9-B9j" id="ndW-ze-evC"/>
                 <outlet property="imageView" destination="ytX-Ke-v8u" id="V5O-cP-M2E"/>
-                <outlet property="imgView" destination="ytX-Ke-v8u" id="wqP-hs-VZR"/>
                 <outlet property="scrollView" destination="ycy-NE-HAP" id="3dX-km-BfG"/>
                 <outlet property="window" destination="QvC-M9-y7g" id="gIp-Ho-8D9"/>
             </connections>
