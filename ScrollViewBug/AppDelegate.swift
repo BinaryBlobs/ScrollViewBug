@@ -23,7 +23,7 @@ class AppDelegate: NSObject, NSApplicationDelegate
     {
         // Insert code here to initialize your application
         
-        onZoom_FIT(self)
+       // onZoom_FIT(self)
     }
 
     //============================================================================================================================================

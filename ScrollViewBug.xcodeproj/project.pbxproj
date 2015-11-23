@@ -16,12 +16,12 @@
 
 /* Begin PBXFileReference section */
 		1E3A61F11BFA8D8E0011A529 /* ScrollViewBug.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ScrollViewBug.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		1E3A61F41BFA8D8E0011A529 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = ../ScrollViewBug/AppDelegate.swift; sourceTree = "<group>"; };
-		1E3A61F61BFA8D8E0011A529 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		1E3A61F41BFA8D8E0011A529 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = ScrollViewBug/AppDelegate.swift; sourceTree = SOURCE_ROOT; };
+		1E3A61F61BFA8D8E0011A529 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = ScrollViewBug/Assets.xcassets; sourceTree = SOURCE_ROOT; };
 		1E3A61F91BFA8D8E0011A529 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
-		1E3A61FB1BFA8D8E0011A529 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = ../ScrollViewBug/Info.plist; sourceTree = "<group>"; };
-		1EB596831BFBE06C002A08D3 /* CenterClipView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CenterClipView.swift; sourceTree = "<group>"; };
-		4C8722D01C012D9A00DC8BAA /* TestImage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = TestImage.png; path = ../ScrollViewBug/TestImage.png; sourceTree = "<group>"; };
+		1E3A61FB1BFA8D8E0011A529 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = ScrollViewBug/Info.plist; sourceTree = SOURCE_ROOT; };
+		1EB596831BFBE06C002A08D3 /* CenterClipView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CenterClipView.swift; path = ScrollViewBug/CenterClipView.swift; sourceTree = SOURCE_ROOT; };
+		4C8722D01C012D9A00DC8BAA /* TestImage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = TestImage.png; path = ScrollViewBug/TestImage.png; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,7 +62,7 @@
 				1E3A61FB1BFA8D8E0011A529 /* Info.plist */,
 			);
 			path = ScrollViewBug;
-			sourceTree = "<group>";
+			sourceTree = SOURCE_ROOT;
 		};
 		1EB596851BFD1D34002A08D3 /* Resources */ = {
 			isa = PBXGroup;
@@ -70,7 +70,8 @@
 				4C8722D01C012D9A00DC8BAA /* TestImage.png */,
 			);
 			name = Resources;
-			sourceTree = "<group>";
+			path = ScrollViewBug;
+			sourceTree = SOURCE_ROOT;
 		};
 /* End PBXGroup section */
 
