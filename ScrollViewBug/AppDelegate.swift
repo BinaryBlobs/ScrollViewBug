@@ -22,6 +22,8 @@ class AppDelegate: NSObject, NSApplicationDelegate
     func applicationDidFinishLaunching(aNotification: NSNotification)
     {
         // Insert code here to initialize your application
+        
+        onZoom_FIT(self)
     }
 
     //============================================================================================================================================
@@ -29,8 +31,6 @@ class AppDelegate: NSObject, NSApplicationDelegate
     func applicationWillTerminate(aNotification: NSNotification)
     {
         // Insert code here to tear down your application
-        
-        onZoom_FIT(self)
     }
 
     //============================================================================================================================================
@@ -64,33 +64,18 @@ class AppDelegate: NSObject, NSApplicationDelegate
     
     @IBAction func onZoom_FIT(sender: AnyObject)
     {
-        var box: NSRect = NSRect(x:0, y:0, width: 0, height: 0)
         if let img = imageView.image
         {
-            var w = max(img.size.width,  imageView.bounds.size.width)
-            var h = max(img.size.height, imageView.bounds.size.height)
+            let max_scale_w = CGFloat(scrollView.bounds.size.width)  / CGFloat(img.size.width)
+            let max_scale_h = CGFloat(scrollView.bounds.size.height) / CGFloat(img.size.height)
             
-            let v: CGFloat = max(w,h)
+            //Use the smaller of the 2 scales
+            let scale = min(max_scale_w, max_scale_h)
             
-            w = v;  h = v
-            
-            box = NSRect(x:0, y:0, width: w, height: h)
-            
-            Swift.print("    imgView.image: \(img.size)")
-            Swift.print("              BOX: \(box)")
-
-            let mv: CGFloat = min(imageView.bounds.size.width, imageView.bounds.size.height)
-            let mi: CGFloat = min(img.size.width, img.size.height)
-            
-            scrollView.magnification =  CGFloat( mv / mi)
+            scrollView.magnification = scale
             clipView.constrainBoundsRect(imageView.bounds)
         }
-   
-      //  scrollView.magnifyToFitRect(scrollView.bounds)
-        
-        scrollView.magnifyToFitRect(box)
     }
 
     //============================================================================================================================================
 }
-

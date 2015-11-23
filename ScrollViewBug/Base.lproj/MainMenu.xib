@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="9060" systemVersion="14F27" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="9060" systemVersion="15B42" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="9060"/>
         <capability name="box content view" minToolsVersion="7.0"/>
@@ -24,9 +24,9 @@
         <customObject id="YLy-65-1bz" customClass="NSFontManager"/>
         <menu title="Main Menu" systemMenu="main" id="AYu-sK-qS6">
             <items>
-                <menuItem title="JunkTestScrollers" id="1Xt-HY-uBw" userLabel="ScrollViewBug">
+                <menuItem title="ScrollViewBug" id="1Xt-HY-uBw" userLabel="ScrollViewBug">
                     <modifierMask key="keyEquivalentModifierMask"/>
-                    <menu key="submenu" title="JunkTestScrollers" systemMenu="apple" id="uQy-DD-JDr">
+                    <menu key="submenu" title="ScrollViewBug" systemMenu="apple" id="uQy-DD-JDr">
                         <items>
                             <menuItem title="About ScrollViewBug" id="5kV-Vb-QxS">
                                 <modifierMask key="keyEquivalentModifierMask"/>
@@ -42,7 +42,7 @@
                                 <menu key="submenu" title="Services" systemMenu="services" id="hz9-B4-Xy5"/>
                             </menuItem>
                             <menuItem isSeparatorItem="YES" id="4je-JR-u6R"/>
-                            <menuItem title="Hide JunkTestScrollers" keyEquivalent="h" id="Olw-nP-bQN">
+                            <menuItem title="Hide ScrollViewBug" keyEquivalent="h" id="Olw-nP-bQN">
                                 <connections>
                                     <action selector="hide:" target="-1" id="PnN-Uc-m68"/>
                                 </connections>
@@ -60,7 +60,7 @@
                                 </connections>
                             </menuItem>
                             <menuItem isSeparatorItem="YES" id="kCx-OE-vgT"/>
-                            <menuItem title="Quit JunkTestScrollers" keyEquivalent="q" id="4sb-4s-VLi">
+                            <menuItem title="Quit ScrollViewBug" keyEquivalent="q" id="4sb-4s-VLi">
                                 <connections>
                                     <action selector="terminate:" target="-1" id="Te7-pn-YzF"/>
                                 </connections>
@@ -661,7 +661,7 @@
                     <modifierMask key="keyEquivalentModifierMask"/>
                     <menu key="submenu" title="Help" systemMenu="help" id="F2S-fz-NVQ">
                         <items>
-                            <menuItem title="JunkTestScrollers Help" keyEquivalent="?" id="FKE-Sm-Kum">
+                            <menuItem title="ScrollViewBug Help" keyEquivalent="?" id="FKE-Sm-Kum">
                                 <connections>
                                     <action selector="showHelp:" target="-1" id="y7X-2Q-9no"/>
                                 </connections>
@@ -693,6 +693,7 @@
                                         <constraint firstAttribute="width" constant="100" id="HiL-cE-Sqn"/>
                                         <constraint firstAttribute="height" constant="21" id="fev-b9-l3U"/>
                                     </constraints>
+                                    <animations/>
                                     <buttonCell key="cell" type="push" title="Zoom Actual" bezelStyle="rounded" alignment="center" continuous="YES" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="5CK-Mo-ub7">
                                         <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                         <font key="font" metaFont="system"/>
@@ -707,6 +708,7 @@
                                         <constraint firstAttribute="width" constant="100" id="MBm-s9-JNX"/>
                                         <constraint firstAttribute="height" constant="21" id="s5t-qN-sjq"/>
                                     </constraints>
+                                    <animations/>
                                     <buttonCell key="cell" type="push" title="Zoom Fit" bezelStyle="rounded" alignment="center" continuous="YES" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="flj-eO-lXc">
                                         <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                         <font key="font" metaFont="system"/>
@@ -721,6 +723,7 @@
                                         <constraint firstAttribute="height" constant="21" id="c5e-G3-wL0"/>
                                         <constraint firstAttribute="width" constant="100" id="nvd-di-yWL"/>
                                     </constraints>
+                                    <animations/>
                                     <buttonCell key="cell" type="push" title="Zoom Out" bezelStyle="rounded" alignment="center" continuous="YES" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="oA1-c2-QL0">
                                         <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                         <font key="font" metaFont="system"/>
@@ -735,6 +738,7 @@
                                         <constraint firstAttribute="width" constant="100" id="5gL-MQ-VaJ"/>
                                         <constraint firstAttribute="height" constant="21" id="dBS-V4-Kc5"/>
                                     </constraints>
+                                    <animations/>
                                     <buttonCell key="cell" type="push" title="Zoom In" bezelStyle="rounded" alignment="center" continuous="YES" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="ieE-za-RRg">
                                         <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                         <font key="font" metaFont="system"/>
@@ -745,6 +749,7 @@
                                 </button>
                                 <button translatesAutoresizingMaskIntoConstraints="NO" id="fA6-Nu-60E">
                                     <rect key="frame" x="86" y="4" width="82" height="18"/>
+                                    <animations/>
                                     <buttonCell key="cell" type="check" title="Centering" bezelStyle="regularSquare" imagePosition="left" alignment="left" state="on" inset="2" id="P6W-Jg-dOL">
                                         <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
                                         <font key="font" metaFont="system"/>
@@ -766,11 +771,13 @@
                                 <constraint firstAttribute="trailing" secondItem="ehI-vQ-Rng" secondAttribute="trailing" constant="20" id="p0E-qe-L2i"/>
                                 <constraint firstItem="u2s-QB-5ht" firstAttribute="trailing" secondItem="ehI-vQ-Rng" secondAttribute="trailing" id="uw7-ie-OsZ"/>
                             </constraints>
+                            <animations/>
                         </view>
                         <constraints>
                             <constraint firstAttribute="width" constant="250" id="mw5-9T-P4W"/>
                             <constraint firstAttribute="height" constant="80" id="vVy-EN-JCB"/>
                         </constraints>
+                        <animations/>
                         <color key="borderColor" white="0.0" alpha="0.41999999999999998" colorSpace="calibratedWhite"/>
                         <color key="fillColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                     </box>
@@ -782,18 +789,23 @@
                             <subviews>
                                 <imageView canDrawConcurrently="YES" horizontalCompressionResistancePriority="250" verticalCompressionResistancePriority="250" fixedFrame="YES" mirrorLayoutDirectionWhenInternationalizing="never" translatesAutoresizingMaskIntoConstraints="NO" id="ytX-Ke-v8u" userLabel="Image View">
                                     <rect key="frame" x="92" y="53" width="256" height="256"/>
+                                    <animations/>
                                     <imageCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" alignment="left" animates="YES" image="TestImage" id="nIs-df-mtW"/>
                                 </imageView>
                             </subviews>
+                            <animations/>
                         </clipView>
+                        <animations/>
                         <edgeInsets key="contentInsets" left="0.0" right="0.0" top="0.0" bottom="0.0"/>
                         <scroller key="horizontalScroller" hidden="YES" verticalHuggingPriority="750" doubleValue="0.5" horizontal="YES" id="4TK-AB-Qbh">
                             <rect key="frame" x="1" y="457" width="440" height="16"/>
                             <autoresizingMask key="autoresizingMask"/>
+                            <animations/>
                         </scroller>
                         <scroller key="verticalScroller" hidden="YES" verticalHuggingPriority="750" horizontal="NO" id="Zzp-NZ-Zas">
                             <rect key="frame" x="345" y="1" width="16" height="187"/>
                             <autoresizingMask key="autoresizingMask"/>
+                            <animations/>
                         </scroller>
                     </scrollView>
                 </subviews>
@@ -805,6 +817,7 @@
                     <constraint firstItem="ycy-NE-HAP" firstAttribute="top" secondItem="EiT-Mj-1SZ" secondAttribute="top" constant="20" id="ZL5-Nk-uMo"/>
                     <constraint firstItem="jYa-3n-nQJ" firstAttribute="centerX" secondItem="EiT-Mj-1SZ" secondAttribute="centerX" id="csh-vb-pMd"/>
                 </constraints>
+                <animations/>
             </view>
             <point key="canvasLocation" x="267" y="362.5"/>
         </window>
