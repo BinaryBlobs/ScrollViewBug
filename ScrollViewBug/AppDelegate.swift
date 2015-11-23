@@ -21,25 +21,28 @@ class AppDelegate: NSObject, NSApplicationDelegate
 
     func applicationDidFinishLaunching(aNotification: NSNotification)
     {
-        // Insert code here to initialize your application
-        
        // onZoom_FIT(self)
+        
+        // QUIESTION: Is this code actually needed ???
+        
+        if let docView = scrollView.documentView
+        {
+            let img = docView as! NSImageView
+            
+            img.setFrameSize(imageView.frame.size)
+        }
     }
 
     //============================================================================================================================================
-
-    func applicationWillTerminate(aNotification: NSNotification)
-    {
-        // Insert code here to tear down your application
-    }
-
-    //============================================================================================================================================
+    
     @IBAction func checkedCentering(sender: AnyObject)
     {
         let button : NSButton = sender as! NSButton
         
         clipView.centersDocumentView = (button.state == 1)
     }
+
+    //============================================================================================================================================
 
     @IBAction func onZoom_IN(sender: AnyObject)
     {
