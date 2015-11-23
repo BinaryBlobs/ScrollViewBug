@@ -1,6 +1,6 @@
 //
 //  AppDelegate.swift
-//  JunkTestScrollers
+//  ScrollViewBug
 //
 //  Created by Hugh on 11/16/15.
 //  Copyright © 2015 Binary Blobs. All rights reserved.
